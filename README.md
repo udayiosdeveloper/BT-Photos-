@@ -11,7 +11,6 @@ The BT-Photos iOS app is designed to fetch and display photos from a public API,
 - [Dependencies](#dependencies)
 - [Project Structure](#project-structure)
 - [Contributing](#contributing)
-- [License](#license)
 
 ## Installation
 
