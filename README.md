@@ -32,3 +32,26 @@ The BT-Photos iOS app is designed to fetch and display photos from a public API,
      ```bash
    pod install
 4. Build and run the project in Xcode.
+
+## Usage
+
+Launch the app on the simulator or a physical device.
+Explore different album IDs using the provided buttons.
+Click on images to view additional details.   
+
+## Dependencies
+
+The BT-Photos iOS app relies on the following dependencies:
+
+- **Alamofire:** Used for network requests.
+- **iProgressHUD:** Provides an elegant progress indicator.
+- **AlamofireImage:** Used for asynchronous image loading.
+  
+## Project Structure
+
+The project follows a standard iOS app structure, with key components:
+
+ImageLoaderViewController: Main view controller handling data fetching and display.
+CustomCell: Custom table view cell for image display.
+LoadMoreCell: Table view cell for navigation between albums.
+ImageDetailsViewController: View controller for displaying additional image details.
