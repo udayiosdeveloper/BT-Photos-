@@ -45,7 +45,7 @@ The BT-Photos iOS app relies on the following dependencies:
 
 - **Alamofire:** Used for network requests.
 - **iProgressHUD:** Provides an elegant progress indicator.
-- **AlamofireImage:** Used for asynchronous image loading.
+- **HanekeSwift:** Used for asynchronous image loading.
   
 ## Project Structure
 
