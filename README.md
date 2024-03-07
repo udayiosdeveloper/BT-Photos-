@@ -51,7 +51,7 @@ The BT-Photos iOS app relies on the following dependencies:
 
 The project follows a standard iOS app structure, with key components:
 
-ImageLoaderViewController: Main view controller handling data fetching and display.
-CustomCell: Custom table view cell for image display.
-LoadMoreCell: Table view cell for navigation between albums.
-ImageDetailsViewController: View controller for displaying additional image details.
+- ImageLoaderViewController: Main view controller handling data fetching and display.
+- CustomCell: Custom table view cell for image display.
+- LoadMoreCell: Table view cell for navigation between albums.
+- ImageDetailsViewController: View controller for displaying additional image details.
