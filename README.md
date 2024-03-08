@@ -26,10 +26,7 @@ The BT-Photos iOS app is designed to fetch and display photos from a public API,
 2. Open the Xcode project:
    ```bash
    open BT-Photos.xcodeproj
-3. Install dependencies (if using CocoaPods):
-     ```bash
-   pod install
-4. Build and run the project in Xcode.
+3. Build and run the project in Xcode.
 
 ## Usage
 
