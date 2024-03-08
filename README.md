@@ -10,7 +10,6 @@ The BT-Photos iOS app is designed to fetch and display photos from a public API,
 - [Usage](#usage)
 - [Dependencies](#dependencies)
 - [Project Structure](#project-structure)
-- [Contributing](#contributing)
 
 ## Installation
 
@@ -54,6 +53,4 @@ The project follows a standard iOS app structure, with key components:
 - CustomCell: Custom table view cell for image display.
 - LoadMoreCell: Table view cell for navigation between albums.
 - ImageDetailsViewController: View controller for displaying additional image details.
-## Contributing
 
-If you find a bug, have a feature request, or want to contribute, please open an issue or submit a pull request. Contributions are welcome!
