@@ -205,16 +205,22 @@ extension ImageLoaderViewController: UITableViewDelegate, UITableViewDataSource 
 
 extension ImageLoaderViewController{
     
-func scrollViewDidEndDecelerating(_ scrollView: UIScrollView) {
-
-
+    func scrollViewDidEndDecelerating(_ scrollView: UIScrollView) {
+        
+        
+        
+        print("scrollView.contentOffset.y----------\(scrollView.contentOffset.y)")
+        
+        print("scrollView.frame.size.height--------\(scrollView.frame.size.height)")
+        print("scrollView.contentSize.height--------\(scrollView.contentSize.height)")
+        
         if (scrollView.contentOffset.y + scrollView.frame.size.height >= scrollView.contentSize.height){
-
+            
             albumID = albumID + 1
             fetchData(forAlbumID: albumID, previous_next_bool: 0)
-
-       }
-
+            
+        }
+        
     }
     
 }
