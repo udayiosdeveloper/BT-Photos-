@@ -143,7 +143,7 @@ class ImageLoaderViewController: UIViewController, AlbumNavigationDelegate {
 extension ImageLoaderViewController: UITableViewDelegate, UITableViewDataSource {
 
     func numberOfSections(in tableView: UITableView) -> Int {
-        return 2
+        return 1
     }
 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -193,11 +193,28 @@ extension ImageLoaderViewController: UITableViewDelegate, UITableViewDataSource 
 
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
-
+        
         let imageDict = totalRecordsArray[indexPath.row]
         let story = UIStoryboard(name: "Main", bundle: nil)
         let vc = story.instantiateViewController(withIdentifier: "ImageDetailsViewController") as! ImageDetailsViewController
         vc.imageDict = imageDict
         self.navigationController?.pushViewController(vc, animated: true)
     }
+}
+
+
+extension ImageLoaderViewController{
+    
+func scrollViewDidEndDecelerating(_ scrollView: UIScrollView) {
+
+
+        if (scrollView.contentOffset.y + scrollView.frame.size.height >= scrollView.contentSize.height){
+
+            albumID = albumID + 1
+            fetchData(forAlbumID: albumID, previous_next_bool: 0)
+
+       }
+
+    }
+    
 }
